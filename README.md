@@ -1,4 +1,5 @@
-uv venv --version 3.10.0
-.venv/Scripts/activate
-
-uv pip install req.txt
+python version 3.10
+python -m venv venv
+venv/Scripts/activate
+pip install req.txt
+python app.py
