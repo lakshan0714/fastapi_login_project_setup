@@ -16,9 +16,14 @@ class Settings:
     PROJECT_NAME = "Sand Project"
     PORT= 8000
     HOST = "0.0.0.0"
-    DEBUG = True
+    DEBUG = False
 
-
+    
     # CORS Config
-    BACKEND_CORS_ORIGINS = ["http://localhost:3000"]
-    ALLOWED_HOSTS= ["http://localhost:3000"]
+    BACKEND_CORS_ORIGINS = os.getenv("ALLOWED_ORIGINS")
+   
+
+    COOKIE_DOMAIN = os.getenv("COOKIE_DOMAIN")
+    
+    ENV = os.getenv("ENV")
+    
