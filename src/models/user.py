@@ -4,7 +4,7 @@ from src.config.database import Base
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
-from src.schemas.UserSchemas import UserRole
+from src.schemas.user_schemas import UserRole
 
 
 class User(Base):
