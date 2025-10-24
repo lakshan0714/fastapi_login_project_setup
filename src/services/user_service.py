@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import Session
 from src.config.database import get_db
 from src.models.user import User,Session
-from src.schemas.UserSchemas import UserCreate
+from src.schemas.user_schema import UserCreate
 from fastapi import Cookie, Depends, HTTPException
 from passlib.context import CryptContext
 from sqlalchemy.exc import SQLAlchemyError
